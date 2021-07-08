@@ -10,8 +10,8 @@ from SalesForecast.Common import available_models, KNN, LINRRG, DECISIONTREE, RA
 def get_model( model_name):
     model_name = model_name.upper()
     assert (model_name.upper() in available_models), "cannot get [{}] model".format(model_name)
-    if model_name == KNN:
-        return get_knn()
+#     if model_name == KNN:
+#         return get_knn()
     if model_name == LINRRG:
         return get_lin_reg()
     if model_name == DECISIONTREE:
